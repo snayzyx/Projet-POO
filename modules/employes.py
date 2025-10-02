@@ -7,5 +7,4 @@ class Employes:
         self.id = id 
         self.poste= job
 
-        
     
