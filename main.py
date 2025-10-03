@@ -15,6 +15,15 @@ def main():
         prenom = str(input("Saisissez un prénom:"))
         nom = str(input("Saisissez un nom:"))
         salaire= int(input("Saisissez un salaire"))
+        poste = str(input("Saissiez un poste pour votre employé:"))
+
+        E = Employes(prenom,nom,salaire,1,poste)
+        print(f"Vous avez recruté {nom} {prenom},il sera {poste},Vous lui avez donner {salaire}€ par mois")
+        correct = str(input("Est-ce Bien correcte [O-N]"))
+        if correct == "N":
+            print("Prenom,Nom,Salaire,Poste")
+            edits = str(input("Que souhaitez vous Modifier: "))
+            
 
 
 
